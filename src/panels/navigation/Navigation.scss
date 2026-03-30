@@ -2,4 +2,13 @@
     margin-top: 60px;
     margin-right: 32px;
     margin-bottom: 32px;
+
+    --bs-nav-link-color: #58c0ce;
+    --bs-nav-link-hover-color: #77d2dd;
+    --bs-nav-pills-link-active-bg: #58c0ce;
+    --bs-nav-pills-link-active-color: #0f1a21;
+
+    .nav-link {
+        transition: color var(--app-ease), background-color var(--app-ease);
+    }
 }
