@@ -12,6 +12,16 @@
         color: var(--app-text);
         padding-top: 14px;
         padding-bottom: 14px;
+        transition:
+            background-color var(--app-ease),
+            transform var(--app-ease),
+            border-color var(--app-ease);
+    }
+
+    .list-group-item:hover {
+        background: #1a2734;
+        transform: translateX(2px);
+        border-color: #3a5368;
     }
 
     .list-group-item + .list-group-item {

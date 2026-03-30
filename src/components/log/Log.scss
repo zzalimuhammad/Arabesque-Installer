@@ -5,27 +5,31 @@
     .log {
         font-family: "Courier New", Courier, monospace;
         font-size: 15px;
-        background-color: black;
-        color: #d3d7cf;
+        background: linear-gradient(180deg, #0f1822 0%, #0b121a 100%);
+        color: #d3e1ef;
         height: calc(100vh - 20em);
         margin-bottom: 1em;
+        border: 1px solid var(--app-border);
+        border-radius: 10px;
+        box-shadow: var(--app-soft-shadow);
     }
 
     .log pre {
         width: 100%;
         height: 100%;
         overflow: scroll;
+        padding: 10px 12px;
     }
 
     .red {
-        color: #ef2929;
+        color: #ff7d7d;
     }
 
     .green {
-        color: #8ae234;
+        color: #9ae89a;
     }
 
     .yellow {
-        color: yellow;
+        color: #ffe184;
     }
 }
