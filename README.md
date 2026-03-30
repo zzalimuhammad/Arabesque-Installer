@@ -1,12 +1,5 @@
 # Arabesque Web Installer
 
-[![Last commit](https://img.shields.io/github/last-commit/breiler/fluid-installer.svg?maxAge=1800)](https://github.com/breiler/fluid-installer)
-
-The Arabesque Web Installer is a web based tool to install and configure firmware.
-
-![Arabesque Web Installer](https://github.com/breiler/fluid-installer/raw/master/pictures/screenshot.png "UGS Splash Image")
-
-
 ## Building
 
 Build a distribution using the following commands:
