@@ -9,6 +9,18 @@
     --bs-nav-pills-link-active-color: #0f1a21;
 
     .nav-link {
+        color: #58c0ce !important;
         transition: color var(--app-ease), background-color var(--app-ease);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: #77d2dd !important;
+    }
+
+    &.nav-pills .nav-link.active,
+    &.nav-pills .show > .nav-link {
+        background-color: #58c0ce !important;
+        color: #0f1a21 !important;
     }
 }
