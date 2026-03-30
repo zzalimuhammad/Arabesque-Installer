@@ -14,7 +14,7 @@ const Header = () => {
             bg="dark"
             data-bs-theme="dark"
             className="header"
-            style={{ height: "60px" }}
+            style={{ height: "78px" }}
         >
             <NavDropdown
                 className="left"
@@ -25,7 +25,7 @@ const Header = () => {
                             <img
                                 src={logoUrl.toString()}
                                 alt="Arabesque logo"
-                                width={150}
+                                width={210}
                             />
                         )}
                     </Navbar.Brand>
