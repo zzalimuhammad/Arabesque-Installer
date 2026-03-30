@@ -1,0 +1,22 @@
+.calibratePin {
+    .badge {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 12px;
+        border-radius: var(--bs-border-radius);
+        height: 100%;
+        width: 100px;
+        background-color: rgb(var(--bs-secondary-rgb));
+        color: rgb(8, 0, 0);
+    }
+
+    .badgeTriggered {
+        background-color: rgb(var(--bs-danger-rgb));
+        color: rgb(8, 0, 0);
+    }
+
+    .badgeInactive {
+        background-color: rgb(var(--bs-success-rgb));
+        color: rgb(8, 0, 0);
+    }
+}

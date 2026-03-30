@@ -1,0 +1,28 @@
+.file-browser-panel {
+    .list-group {
+        border: 1px solid var(--app-border);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+    }
+
+    .list-group-item {
+        background: linear-gradient(180deg, #17212c 0%, #141d27 100%);
+        border-color: var(--app-border);
+        color: var(--app-text);
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .list-group-item + .list-group-item {
+        border-top-width: 1px;
+    }
+
+    .list-group-item a {
+        color: var(--app-primary);
+    }
+
+    .list-group-item a:hover {
+        color: var(--app-primary-hover);
+    }
+}

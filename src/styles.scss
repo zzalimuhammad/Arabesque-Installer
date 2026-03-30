@@ -1,0 +1,106 @@
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --app-bg: #0b1118;
+    --app-bg-soft: #131b24;
+    --app-surface: #18222e;
+    --app-surface-2: #1e2b38;
+    --app-border: #2a3a4b;
+    --app-text: #e7eef6;
+    --app-text-muted: #b4c3d2;
+    --app-primary: #53b7c8;
+    --app-primary-hover: #68c8d8;
+    --app-danger: #d46a6a;
+    --app-warning: #d9b46b;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1120px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+body {
+    padding-bottom: 80px;
+    background:
+        radial-gradient(1200px 700px at 10% -10%, #1b2d3c 0%, transparent 60%),
+        radial-gradient(900px 600px at 95% 0%, #18313a 0%, transparent 55%),
+        var(--app-bg);
+    color: var(--app-text);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+a {
+    color: var(--app-primary);
+}
+
+a:hover {
+    color: var(--app-primary-hover);
+}
+
+.card {
+    background: linear-gradient(180deg, var(--app-surface-2) 0%, var(--app-surface) 100%);
+    border: 1px solid var(--app-border);
+    border-radius: 14px;
+    color: var(--app-text);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.28);
+}
+
+.card-header,
+.card-footer {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: var(--app-border);
+}
+
+.text-muted {
+    color: var(--app-text-muted) !important;
+}
+
+.form-control,
+.form-select {
+    background-color: #0f1720;
+    color: var(--app-text);
+    border: 1px solid var(--app-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--app-primary);
+    box-shadow: 0 0 0 0.2rem rgba(83, 183, 200, 0.2);
+    background-color: #101b25;
+    color: var(--app-text);
+}
+
+.btn-primary {
+    background-color: var(--app-primary);
+    border-color: var(--app-primary);
+    color: #0f1a21;
+    font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--app-primary-hover);
+    border-color: var(--app-primary-hover);
+    color: #0f1a21;
+}
+
+.btn-secondary {
+    background-color: #2a3a4b;
+    border-color: #2a3a4b;
+}
+
+.alert {
+    border-radius: 12px;
+    border-width: 1px;
+}
+
+@include media-breakpoint-between(sm, lg) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 100%;
+    }
+}

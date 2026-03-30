@@ -1,0 +1,161 @@
+{
+    "header": {},
+    "footer": {},
+    "page": {
+        "select-device": {
+            "fluidnc": "Use esta opção se você quiser instalar, atualizar ou configurar o seu controlador Arabesque.",
+            "continue": "Continuar"
+        },
+        "connection": {
+            "title": "Instalador Web Arabesque",
+            "description": "Essa ferramenta irá facilitar a instalação ou atualização do Arabesque na sua controladora. Conecte a sua controladora e pressione Conectar para continuar.",
+            "connect": "Conectar",
+            "connecting": "Conectando",
+            "establishing-connection": "Estabelecendo conexão com a controladora"
+        },
+        "home": {
+            "description": "Agora você está conectado a um dispositivo, por favor selecione uma ação abaixo",
+            "error-while-booting": "Ocorreu um erro durante a inicialização, provavelmente devido a uma configuração inválida.",
+            "show-details": "Clique aqui para visualizar detalhes"
+        },
+        "file-browser": {
+            "title": "Gerenciador de arquivos",
+            "loading": "Carregando...",
+            "downloading": "Baixando...",
+            "uploading": "Enviando",
+            "config-missing": "O arquivo de configuração \"{{configFilename}}\" está faltando, você deseja criá-lo?",
+            "create-config": "Criar configuração",
+            "create-new-config": "Criar nova configuração",
+            "upload": "Enviar",
+            "active-config": "Configuração ativa",
+            "select-config": "Selecionar configuração",
+            "select-as-config": "Selecionar como configuração",
+            "edit": "Editar",
+            "delete": "Apagar",
+            "download": "Baixar"
+        },
+        "terminal": {
+            "title": "Terminal",
+            "restarting": "Reiniciando o controlador...",
+            "restart": "Reiniciar",
+            "restart-description": "Faz um reset rígido no controlador definindo DTR/RTS",
+            "reset": "Redefinir",
+            "reset-description": "Redefine o controlador com um comando 0x18",
+            "unlock": "Desbloquear",
+            "unlock-description": "Desbloqueia o controle com $X",
+            "status": "Status",
+            "status-description": "Obter o status do controlador",
+            "startup": "Mensagens de inicialização",
+            "startup-description": "Obter mensagens de log de inicialização",
+            "version": "Versão",
+            "version-description": "Obter a versão do firmware"
+        },
+        "not-found": {
+            "title": "Página não encontrada",
+            "go-back-home": "Voltar ao início"
+        }
+    },
+    "panel": {
+        "navigation": {
+            "home": "Início",
+            "install": "Instalar",
+            "terminal": "Terminal",
+            "file-browser": "Navegador de arquivos",
+            "wifi": "Wi-Fi",
+            "calibrate": "Calibrar",
+            "stacktrace-decoder": "Decode Stack Trace",
+            "restart": "Reiniciar",
+            "disconnect": "Desconectar"
+        },
+        "firmware": {
+            "install": "Instalar",
+            "install-description": "Selecione qual firmware você deseja instalar no seu controlador.",
+            "loading": "Carregando...",
+            "install-custom-image": "Instalar uma imagem personalizada...",
+            "show-prereleases": "Mostrar pré-lançamentos",
+            "fetching": "Buscando"
+        },
+        "progress": {
+            "title": "Instalando",
+            "downloading": "baixando pacote...",
+            "validating": "Validando imagens...",
+            "flashing": "Instalando pacote no dispositivo..."
+        },
+        "bootloader": {
+            "waiting": "Esperando o controle entrar no bootloader...",
+            "not-active": "Bootloader não está ativo - Tente segurar o botão BOOT"
+        },
+        "unsupported": {
+            "title": "Navegador não suportado",
+            "description": "Seu navegador da Web atual não é suportado, por favor use o Chrome, Edge ou Opera"
+        }
+    },
+    "component": {
+        "log": {
+            "show-details": "Exibir detalhes",
+            "hide-details": "Ocultar detalhes"
+        }
+    },
+    "modal": {
+        "installer": {
+            "error-reconnecting": "Ocorreu um erro ao reconectar. Por favor, reinicie o controlador",
+            "uploading": "Enviando",
+            "downloading": "Baixando",
+            "downloading-description": "Baixando pacote...",
+            "restarting": "Reiniciando",
+            "restarting-description": "Aguardando reinicialização do controlador...",
+            "uploading-files": "Enviando Arquivos",
+            "uploading-files-description": "Enviando arquivos...",
+            "done": "Concluído",
+            "done-description": "O controlador foi instalado com sucesso e está pronto para ser usado.",
+            "continue": "Continar",
+            "error": "Erro!",
+            "close": "Fechar",
+            "confirm-installation": "Confirmar a instalação",
+            "confirm-installation-description": "Isto irá instalar o firmware \"{{release}}\" no controle. Ele irá {{not}} apagar o controlador.",
+            "not": "não",
+            "installation-speed": "Velocidade de instalação",
+            "installation-speed-help": "Alguns controles precisam ser instalados a uma velocidade inferior. Se você estiver enfrentando problemas, tente diminuir a velocidade.",
+            "install": "Instalar",
+            "cancel": "Cancelar",
+            "select-image": "Selecione a imagem",
+            "select-image-description1": "Se você baixou um pacote manualmente você pode instalar a imagem daqui.",
+            "select-image-description2": "Selecione o arquivo firmware.bin para instalar no controlador.",
+            "select-image-button": "Selecionar imagem do firmware"
+        },
+        "lost-connection": {
+            "description": "Perdeu a conexão com o controlador",
+            "close": "Fechar"
+        }
+    },
+    "card": {
+        "install": {
+            "upgrade-description": "Atualizar Arabesque de",
+            "install-description": "A controladora parece não ter o Arabesque instalado, deseja instalá-lo?",
+            "upgrade-button": "Atualizar o Arabesque",
+            "install-button": "Instalar o Arabesque"
+        },
+        "terminal": {
+            "open-terminal": "Abrir terminal",
+            "open-terminal-description": "Abrir um terminal para sua controladora"
+        },
+        "file-browser": {
+            "open-browser": "Navegador de arquivos",
+            "open-browser-description": "Gerenciar arquivos da controladora"
+        },
+        "calibrate": {
+            "calibrate": "Calibrar",
+            "calibrate-description": "Calibrar configurações da sua controladora"
+        },
+        "wifi": {
+            "configure": "Configurar Wi-Fi",
+            "configure-description": "Gerenciar configurações de Wi-Fi da controladora",
+            "connected-to": "Conectado a",
+            "access-point": "Ponto de Acesso"
+        },
+        "stacktrace": {
+            "open": "Decode Stack Trace",
+            "description": "Decode ESP32 stack traces using .addrinfo files"
+        }
+    }
+}

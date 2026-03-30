@@ -1,0 +1,36 @@
+.footer {
+    background: linear-gradient(180deg, #111a23 0%, #0d141c 100%);
+    border-top: 1px solid var(--app-border);
+    padding: 10px 0 16px 0;
+    font-size: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.24);
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    a {
+        color: var(--app-text-muted);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    a:hover {
+        color: var(--app-text);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,33 @@
+.select-icon {
+    color: var(--app-primary);
+    margin: 18px 0 16px 0;
+}
+
+.select-card {
+    min-height: 270px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card-footer {
+        background: transparent;
+    }
+
+    button {
+        margin-right: 0;
+        min-width: 150px;
+        width: 100%;
+    }
+}
+
+.select-mode .col:first-child {
+    padding-left: 0 !important;
+}
