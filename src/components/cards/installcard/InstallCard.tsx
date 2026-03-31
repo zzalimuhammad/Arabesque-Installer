@@ -31,7 +31,6 @@ export const InstallCard = ({
                 {controllerService.version && (
                     <>
                         <p>{t("card.install.upgrade-description")}</p>
-                        <p>{controllerService.build}</p>
                     </>
                 )}
                 {!controllerService.version && (

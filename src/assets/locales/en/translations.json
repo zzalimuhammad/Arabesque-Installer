@@ -130,7 +130,7 @@
     },
     "card": {
         "install": {
-            "upgrade-description": "Upgrade Arabesque from",
+            "upgrade-description": "Install or Upgrade Arabesque",
             "install-description": "The controller does not seem to have Arabesque installed, do you wish to install it?",
             "upgrade-button": "Upgrade Arabesque",
             "install-button": "Install Arabesque"

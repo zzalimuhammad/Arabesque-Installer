@@ -49,20 +49,20 @@ const Home = () => {
                         )}
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs={12} md={6} lg={4}>
+                <Row className="select-grid g-4">
+                    <Col xs={12} md={6} lg={4} className="d-flex">
                         <InstallCard
                             onClick={() => navigate(Page.FLUIDNC_INSTALLER)}
                         />
                     </Col>
-                    <Col xs={12} md={6} lg={4}>
+                    <Col xs={12} md={6} lg={4} className="d-flex">
                         <TerminalCard
                             disabled={false}
                             onClick={() => navigate(Page.FLUIDNC_TERMINAL)}
                         />
                     </Col>
                     {controllerService.version && (
-                        <Col xs={12} md={6} lg={4}>
+                        <Col xs={12} md={6} lg={4} className="d-flex">
                             <FileBrowserCard
                                 onClick={() =>
                                     navigate(Page.FLUIDNC_FILEBROWSER)
@@ -71,20 +71,20 @@ const Home = () => {
                         </Col>
                     )}
                     {controllerService.version && (
-                        <Col xs={12} md={6} lg={4}>
+                        <Col xs={12} md={6} lg={4} className="d-flex">
                             <CalibrateCard
                                 onClick={() => navigate(Page.FLUIDNC_CALIBRATE)}
                             />
                         </Col>
                     )}
                     {controllerService.hasWiFi && (
-                        <Col xs={12} md={6} lg={4}>
+                        <Col xs={12} md={6} lg={4} className="d-flex">
                             <WiFiCard
                                 onClick={() => navigate(Page.FLUIDNC_WIFI)}
                             />
                         </Col>
                     )}
-                    <Col xs={12} md={6} lg={4}>
+                    <Col xs={12} md={6} lg={4} className="d-flex">
                         <StackTraceDecoderCard
                             onClick={() =>
                                 navigate(Page.FLUIDNC_STACKTRACE_DECODER)
