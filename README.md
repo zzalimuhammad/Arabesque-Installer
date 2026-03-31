@@ -10,13 +10,24 @@ Arabesque Web Installer is a webapp that's let you install Arabesque Firmware ea
 
 ![App Screenshot](https://github.com/zzalimuhammad/Arabesque-Installer/blob/c8fff3e2988f3ec2688cad000260c565008f1262/pictures/screenshot1.png)
 
-## Installation
+## Building
 
-Install my-project with npm
+Build a distribution using the following commands:
 
-```bash
-  npm install my-project
-  cd my-project
+```
+npm install
+npm run build
+```
+
+## Developing
+Start a development server using the following commands then open your browser to http://localhost:1234/
+
+```
+# Remove build cache
+rm -r .parcel-cache
+
+npm install
+npm start
 ```
     
 ## License
