@@ -1,22 +1,35 @@
-# Arabesque Web Installer
 
-## Building
+![Logo](https://github.com/zzalimuhammad/Arabesque-Installer/blob/9d0a409b0365cb0132e3f7e02deddb6e5b8b0d9e/logo.svg)
 
-Build a distribution using the following commands:
 
-````
-npm install
-npm run build
+# Project Title
+
+A brief description of what this project does and who it's for
+
+
+## Screenshots
+
+![App Screenshot](https://dummyimage.com/468x300?text=App+Screenshot+Here)
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
 ```
+    
+## License
 
-## Developing
-Start a development server using the following commands then open your browser to http://localhost:1234/
-
-```
-# Remove build cache
-rm -r .parcel-cache
-
-npm install
-npm start
-```
+[MIT](https://choosealicense.com/licenses/mit/)
 
