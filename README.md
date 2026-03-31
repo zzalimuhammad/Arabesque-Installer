@@ -8,16 +8,7 @@ Arabesque Web Installer is a webapp that's let you install Arabesque Firmware ea
 
 ## Screenshots
 
-![App Screenshot](https://dummyimage.com/468x300?text=App+Screenshot+Here)
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
+![App Screenshot](https://github.com/zzalimuhammad/Arabesque-Installer/blob/c8fff3e2988f3ec2688cad000260c565008f1262/pictures/screenshot1.png)
 
 ## Installation
 
