@@ -150,7 +150,7 @@ const FluidNCOutletInner = () => {
                         <Col sm={5} md={4} lg={3}>
                             <Navigation />
                         </Col>
-                        <Col sm={7} md={8} lg={9} style={{ marginTop: "32px" }}>
+                        <Col sm={7} md={8} lg={9} className="fluidnc-content-column">
                             <LostConnectionModal onClose={onCloseConnection} />
                             <Outlet />
                         </Col>

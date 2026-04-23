@@ -32,7 +32,7 @@ const Home = () => {
             />
             <PageTitle>{t("page.connection.title")}</PageTitle>
             <p>{t("page.home.description")}</p>
-            <div className="container text-center select-mode">
+            <div className="text-center select-mode">
                 <Row>
                     <Col xs={12}>
                         {controllerService.hasErrors && (

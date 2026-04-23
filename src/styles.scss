@@ -60,6 +60,16 @@ body {
     width: 100%;
 }
 
+.fluidnc-content-column {
+    margin-top: 32px;
+}
+
+@media (max-width: 576px) {
+    .fluidnc-content-column {
+        margin-top: 16px;
+    }
+}
+
 a {
     color: var(--app-primary);
     transition: color var(--app-ease);
