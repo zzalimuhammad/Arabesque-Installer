@@ -1,10 +1,20 @@
+.select-mode {
+    max-width: 980px;
+    margin: 0 auto 12px auto;
+}
+
 .select-icon {
     color: var(--app-primary);
-    margin: 18px 0 16px 0;
+    margin: 8px 0 10px 0;
+
+    svg {
+        width: 3.1rem;
+        height: 3.1rem;
+    }
 }
 
 .select-card {
-    min-height: 270px;
+    min-height: 220px;
     height: 100%;
     width: 100%;
     margin-bottom: 0;
@@ -12,24 +22,79 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    backdrop-filter: none;
+    transition:
+        border-color var(--app-ease),
+        box-shadow var(--app-ease),
+        transform 150ms ease;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }
 
     .card-body {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
+        padding: 16px 18px;
+
+        p {
+            margin-bottom: 0;
+            font-size: 1.02rem;
+            line-height: 1.35;
+        }
     }
 
     .card-footer {
         background: transparent;
+        padding: 10px 18px 14px;
     }
 
     button {
         margin-right: 0;
-        min-width: 150px;
+        min-width: 130px;
         width: 100%;
     }
 }
 
+.select-grid {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+    margin-top: 6px;
+}
+
 .select-grid > [class*="col"] {
     display: flex;
+}
+
+@media (max-width: 992px) {
+    .select-card {
+        min-height: 205px;
+    }
+}
+
+@media (max-width: 576px) {
+    .select-mode {
+        margin-bottom: 8px;
+    }
+
+    .select-card {
+        min-height: 190px;
+
+        .card-body {
+            padding: 14px 14px;
+        }
+
+        .card-footer {
+            padding: 8px 14px 12px;
+        }
+    }
+
+    .select-icon svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
