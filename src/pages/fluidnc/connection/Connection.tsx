@@ -93,10 +93,8 @@ const Connection = ({ onConnect }: Props) => {
                                 </PageTitle>
                                 <p className="page-subtitle">
                                     {t("page.connection.description")}
-                                                )} <Spinner />
-                                <div
-                                    className="connection-visual mx-auto"
-                                >
+                                </p>
+                                <div className="connection-visual mx-auto">
                                     <img
                                         className="image"
                                         src={connectImageUrl.toString()}
@@ -111,6 +109,7 @@ const Connection = ({ onConnect }: Props) => {
                                 {errorMessage}
                             </div>
                         )}
+
                         {connectionState !== ConnectionState.CONNECTED && (
                             <div className="connection-actions mx-auto">
                                 <Button
@@ -136,30 +135,26 @@ const Connection = ({ onConnect }: Props) => {
 
                         {connectionState === ConnectionState.CONNECTING &&
                             controllerService && (
-                                <>
-                                    <Modal show={true} size="lg" centered>
-                                        <Modal.Body>
-                                            <h3>
-                                                {t(
-                                                    "page.connection.connecting"
-                                                )}
-                                            </h3>
-                                            <p>
-                                                {t(
-                                                    "page.connection.establishing-connection"
-                                                )} <Spinner />
-                                            </p>
-                                            <ControllerLog
-                                                show={showLog}
-                                                onShow={setShowLog}
-                                                controllerService={
-                                                    controllerService
-                                                }
-                                                onError={() => {}}
-                                            />
-                                        </Modal.Body>
-                                    </Modal>
-                                </>
+                                <Modal show={true} size="lg" centered>
+                                    <Modal.Body>
+                                        <h3>
+                                            {t("page.connection.connecting")}
+                                        </h3>
+                                        <p>
+                                            {t(
+                                                "page.connection.establishing-connection"
+                                            )} <Spinner />
+                                        </p>
+                                        <ControllerLog
+                                            show={showLog}
+                                            onShow={setShowLog}
+                                            controllerService={
+                                                controllerService
+                                            }
+                                            onError={() => {}}
+                                        />
+                                    </Modal.Body>
+                                </Modal>
                             )}
                     </div>
                 </Col>
@@ -167,4 +162,5 @@ const Connection = ({ onConnect }: Props) => {
         </Container>
     );
 };
+
 export default Connection;
