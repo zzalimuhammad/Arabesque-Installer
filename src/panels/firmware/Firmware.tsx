@@ -21,7 +21,6 @@ import {
 } from "react-bootstrap";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import UploadCustomImageModal from "../../modals/installermodal/UploadCustomImageModal";
-import VersionCard from "../../components/cards/versioncard/VersionCard";
 import { SerialPortContext } from "../../context/SerialPortContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
@@ -300,7 +299,7 @@ const Firmware = ({ onInstall, githubService }: Props) => {
 
             {!isDetecting && !isLoading && selectedRelease && (
                 <div>
-                    <Row className="align-items-start">
+                    <Row>
                         <Col
                             sm="12"
                             md="12"
@@ -341,20 +340,6 @@ const Firmware = ({ onInstall, githubService }: Props) => {
                                         />
                                     </div>
                                 )}
-                        </Col>
-                        <Col
-                            sm="12"
-                            md="12"
-                            lg="3"
-                            xl="4"
-                            style={{ marginTop: "40px" }}
-                        >
-                            <div className="firmware-release-sticky">
-                                <VersionCard
-                                    release={selectedRelease}
-                                    isLatest={false}
-                                />
-                            </div>
                         </Col>
                     </Row>
                 </div>
