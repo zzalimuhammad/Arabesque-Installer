@@ -4,8 +4,7 @@
     padding: 10px 0 16px 0;
     font-size: 15px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     box-shadow: 0 -10px 26px rgba(0, 0, 0, 0.26);
     backdrop-filter: blur(8px);
 
@@ -13,13 +12,18 @@
         list-style: none;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px 14px;
         margin: 0;
-        padding: 0;
+        padding: 0 18px;
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     li {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0;
     }
 
     a {
@@ -35,5 +39,24 @@
         color: var(--app-text);
         text-decoration: none;
         transform: translateY(-1px);
+    }
+
+    .footer-terminal {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-bottom: 12px;
+
+        ul {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        .footer-terminal {
+            margin-left: 0;
+        }
     }
 }

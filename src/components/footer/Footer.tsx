@@ -45,7 +45,7 @@ const Footer = () => {
                     </a>
                 </li>
                 {isConnected && (
-                    <li className="ms-auto" style={{ marginRight: "20px" }}>
+                    <li className="footer-terminal">
                         <Button
                             variant="secondary"
                             size="sm"

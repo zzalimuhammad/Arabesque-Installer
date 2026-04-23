@@ -69,11 +69,15 @@ const Root = () => {
 const App = () => {
     return (
         <MatomoTracker>
-            <Header />
-            <Container>
-                <Root />
-            </Container>
-            <Footer />
+            <div className="app-shell">
+                <Header />
+                <main className="app-main">
+                    <Container>
+                        <Root />
+                    </Container>
+                </main>
+                <Footer />
+            </div>
         </MatomoTracker>
     );
 };
