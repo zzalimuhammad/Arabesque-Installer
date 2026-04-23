@@ -349,10 +349,12 @@ const Firmware = ({ onInstall, githubService }: Props) => {
                             xl="4"
                             style={{ marginTop: "40px" }}
                         >
-                            <VersionCard
-                                release={selectedRelease}
-                                isLatest={false}
-                            />
+                            <div className="firmware-release-sticky">
+                                <VersionCard
+                                    release={selectedRelease}
+                                    isLatest={false}
+                                />
+                            </div>
                         </Col>
                     </Row>
                 </div>

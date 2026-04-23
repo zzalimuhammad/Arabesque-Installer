@@ -30,9 +30,13 @@ const Home = () => {
                 setShow={setShowLogModal}
                 rows={controllerService.startupLines}
             />
-            <PageTitle>{t("page.connection.title")}</PageTitle>
-            <p>{t("page.home.description")}</p>
-            <div className="text-center select-mode">
+            <div className="content-stack">
+                <section className="surface-panel page-hero home-hero">
+                    <span className="page-kicker">{t("page.connection.title")}</span>
+                    <PageTitle>{t("page.connection.title")}</PageTitle>
+                    <p className="page-subtitle">{t("page.home.description")}</p>
+                </section>
+
                 <Row>
                     <Col xs={12}>
                         {controllerService.hasErrors && (
@@ -49,7 +53,9 @@ const Home = () => {
                         )}
                     </Col>
                 </Row>
-                <Row className="select-grid g-4">
+
+                <div className="surface-panel panel-section select-panel">
+                    <Row className="select-grid g-4">
                     <Col xs={12} md={6} lg={4} className="d-flex">
                         <InstallCard
                             onClick={() => navigate(Page.FLUIDNC_INSTALLER)}
@@ -100,7 +106,8 @@ const Home = () => {
                         />
                     </Col>
                     )*/}
-                </Row>
+                    </Row>
+                </div>
             </div>
         </>
     );

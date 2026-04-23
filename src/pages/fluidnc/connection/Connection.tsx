@@ -81,17 +81,21 @@ const Connection = ({ onConnect }: Props) => {
         <Container>
             <Row className="justify-content-center">
                 <Col xs={12} md={8} lg={7}>
-                    <div className="component-connection">
+                    <div className="component-connection surface-panel panel-section">
                         {(connectionState === ConnectionState.DISCONNECTED ||
                             connectionState === ConnectionState.CONNECTING) && (
                             <>
+                                <span className="page-kicker">
+                                    {t("page.connection.title")}
+                                </span>
                                 <PageTitle>
                                     {t("page.connection.title")}
                                 </PageTitle>
-                                <p>{t("page.connection.description")}</p>
+                                <p className="page-subtitle">
+                                    {t("page.connection.description")}
+                                                )} <Spinner />
                                 <div
-                                    className="mx-auto"
-                                    style={{ textAlign: "center" }}
+                                    className="connection-visual mx-auto"
                                 >
                                     <img
                                         className="image"
@@ -108,15 +112,9 @@ const Connection = ({ onConnect }: Props) => {
                             </div>
                         )}
                         {connectionState !== ConnectionState.CONNECTED && (
-                            <div
-                                className="mx-auto"
-                                style={{ textAlign: "center" }}
-                            >
+                            <div className="connection-actions mx-auto">
                                 <Button
-                                    style={{
-                                        width: "100%",
-                                        marginRight: "0px"
-                                    }}
+                                    className="w-100"
                                     onClick={connect}
                                     disabled={
                                         connectionState ===
@@ -149,8 +147,7 @@ const Connection = ({ onConnect }: Props) => {
                                             <p>
                                                 {t(
                                                     "page.connection.establishing-connection"
-                                                )}{" "}
-                                                <Spinner />
+                                                )} <Spinner />
                                             </p>
                                             <ControllerLog
                                                 show={showLog}

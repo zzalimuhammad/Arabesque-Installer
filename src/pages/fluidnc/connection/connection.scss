@@ -1,15 +1,27 @@
 .component-connection {
-    max-width: 500px;
+    max-width: 620px;
     margin: 8px auto 20px auto;
-    padding: 12px 0;
 
     p {
         color: var(--app-text-muted);
         margin-bottom: 14px;
     }
 
+    .connection-visual {
+        text-align: center;
+        padding: 8px 0 14px;
+    }
+
+    .connection-actions {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
     .image {
         width: 100%;
-        margin: 24px auto 34px auto;
+        max-width: 430px;
+        margin: 14px auto 26px auto;
+        display: block;
+        filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.28));
     }
 }

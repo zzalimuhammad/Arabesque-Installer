@@ -145,14 +145,23 @@ const FluidNCOutletInner = () => {
     return (
         <SerialPortContext.Provider value={serialPort}>
             <ControllerServiceContext.Provider value={controllerService}>
-                <Container>
-                    <Row>
-                        <Col sm={5} md={4} lg={3}>
-                            <Navigation />
+                <Container className="fluidnc-shell">
+                    <Row className="g-4 align-items-start">
+                        <Col xs={12} md={4} lg={3} className="fluidnc-sidebar-column">
+                            <div className="surface-panel panel-section panel-section--tight fluidnc-sidebar-panel">
+                                <Navigation />
+                            </div>
                         </Col>
-                        <Col sm={7} md={8} lg={9} className="fluidnc-content-column">
-                            <LostConnectionModal onClose={onCloseConnection} />
-                            <Outlet />
+                        <Col
+                            xs={12}
+                            md={8}
+                            lg={9}
+                            className="fluidnc-content-column"
+                        >
+                            <div className="surface-panel panel-section fluidnc-workspace-panel">
+                                <LostConnectionModal onClose={onCloseConnection} />
+                                <Outlet />
+                            </div>
                         </Col>
                     </Row>
                 </Container>

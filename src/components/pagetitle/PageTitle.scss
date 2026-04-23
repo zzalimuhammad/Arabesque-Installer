@@ -1,7 +1,9 @@
 .page-title {
-    margin-bottom: 14px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 6px;
     color: var(--app-text);
-    letter-spacing: 0.2px;
-    font-weight: 650;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    line-height: 1.08;
+    font-size: clamp(1.8rem, 2.3vw, 2.4rem);
 }

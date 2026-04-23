@@ -1,6 +1,7 @@
-.select-mode {
-    max-width: 980px;
-    margin: 0 auto 12px auto;
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .select-icon {
@@ -14,18 +15,17 @@
 }
 
 .select-card {
-    min-height: 260px;
-    height: 260px;
-    max-height: 260px;
+    min-height: 248px;
+    height: 100%;
     width: 100%;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
-    backdrop-filter: none;
+    border-radius: 18px;
+    box-shadow: var(--app-soft-shadow);
+    background: linear-gradient(180deg, rgba(24, 36, 49, 0.98) 0%, rgba(17, 26, 36, 0.98) 100%);
     transition:
         border-color var(--app-ease),
         box-shadow var(--app-ease),
@@ -41,12 +41,12 @@
         flex-direction: column;
         gap: 6px;
         flex: 1 1 auto;
-        padding: 14px 18px;
+        padding: 18px 18px 16px;
         overflow: hidden;
 
         p {
             margin-bottom: 0;
-            font-size: 1.02rem;
+            font-size: 1rem;
             line-height: 1.35;
         }
     }
@@ -54,7 +54,7 @@
     .card-footer {
         background: transparent;
         margin-top: auto;
-        padding: 8px 18px 14px;
+        padding: 8px 18px 18px;
     }
 
     button {
@@ -67,30 +67,28 @@
 .select-grid {
     --bs-gutter-x: 1rem;
     --bs-gutter-y: 1rem;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .select-grid > [class*="col"] {
     display: flex;
 }
 
+@media (min-width: 992px) {
+    .select-panel .select-grid > [class*="col"] {
+        min-height: 100%;
+    }
+}
+
 @media (max-width: 992px) {
     .select-card {
-        min-height: 246px;
-        height: 246px;
-        max-height: 246px;
+        min-height: 232px;
     }
 }
 
 @media (max-width: 576px) {
-    .select-mode {
-        margin-bottom: 8px;
-    }
-
     .select-card {
-        min-height: 230px;
-        height: 230px;
-        max-height: 230px;
+        min-height: 220px;
 
         .card-body {
             padding: 14px 14px;

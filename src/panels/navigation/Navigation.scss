@@ -1,26 +1,48 @@
 .navigation-container {
-    margin-top: 32px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-
     --bs-nav-link-color: #58c0ce;
     --bs-nav-link-hover-color: #77d2dd;
     --bs-nav-pills-link-active-bg: #58c0ce;
     --bs-nav-pills-link-active-color: #0f1a21;
+    gap: 8px;
 
     .nav-link {
-        color: #58c0ce !important;
-        transition: color var(--app-ease), background-color var(--app-ease);
+        color: var(--app-text-muted) !important;
+        transition:
+            color var(--app-ease),
+            background-color var(--app-ease),
+            transform var(--app-ease);
+        border-radius: 14px;
+        padding: 12px 14px;
+        margin-bottom: 2px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .nav-link:hover,
     .nav-link:focus {
-        color: #77d2dd !important;
+        color: var(--app-text) !important;
+        background: rgba(92, 194, 207, 0.08);
+        border-color: rgba(92, 194, 207, 0.14);
+        transform: translateX(2px);
     }
 
     &.nav-pills .nav-link.active,
     &.nav-pills .show > .nav-link {
-        background-color: #58c0ce !important;
-        color: #0f1a21 !important;
+        background: linear-gradient(180deg, #6ad0db 0%, #57c2cf 100%) !important;
+        color: #0d1620 !important;
+        box-shadow: 0 10px 22px rgba(88, 192, 206, 0.2);
+    }
+
+    hr {
+        border-color: rgba(92, 194, 207, 0.14);
+        opacity: 1;
+        margin: 8px 0;
+    }
+
+    .alert {
+        margin-bottom: 10px;
     }
 }
