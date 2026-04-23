@@ -300,7 +300,7 @@ const Firmware = ({ onInstall, githubService }: Props) => {
 
             {!isDetecting && !isLoading && selectedRelease && (
                 <div>
-                    <Row>
+                    <Row className="align-items-start">
                         <Col
                             sm="12"
                             md="12"
@@ -342,9 +342,13 @@ const Firmware = ({ onInstall, githubService }: Props) => {
                                     </div>
                                 )}
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col sm="12" md="12" lg="9" xl="8">
+                        <Col
+                            sm="12"
+                            md="12"
+                            lg="3"
+                            xl="4"
+                            style={{ marginTop: "40px" }}
+                        >
                             <VersionCard
                                 release={selectedRelease}
                                 isLatest={false}
