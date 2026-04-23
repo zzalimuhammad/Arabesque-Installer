@@ -11,6 +11,10 @@ export const FLUIDNC_RESOURCES_BASE_URL =
 export const CONFIG_BASE_URL =
     "https://raw.githubusercontent.com/breiler/fluidnc-config-files/refs/heads/fluid-installer";
 
+function getReleasePathName(releaseName: string): string {
+    return encodeURIComponent(releaseName);
+}
+
 /**
  * Contract for a github release
  * (https://api.github.com/repos/bdring/FluidNC/releases)
@@ -104,19 +108,22 @@ export class GithubService {
     getReleases(includePrerelease: boolean = false): Promise<GithubRelease[]> {
         return fetch(this.apiURL)
             .then((res) => res.json())
-            .then((releases) =>
+            .then((releases: GithubRelease[]) =>
                 releases
                     .filter(
-                        (release) =>
+                        (release: GithubRelease) =>
                             includePrerelease ||
                             (!release.draft && !release.prerelease)
                     )
                     .filter(
-                        (release) =>
+                        (release: GithubRelease) =>
                             new Date(release.created_at) >
                             new Date("2023-06-08T21:23:04Z")
                     )
-                    .sort((release1, release2) => release2?.id - release1?.id)
+                    .sort(
+                        (release1: GithubRelease, release2: GithubRelease) =>
+                            release2?.id - release1?.id
+                    )
             );
     }
 
@@ -146,7 +153,8 @@ export class GithubService {
     }
 
     getReleaseManifest(release: GithubRelease): Promise<GithubReleaseManifest> {
-        const manifestBaseUrl = this.resourcesURL + "/" + release.name;
+        const manifestBaseUrl =
+            this.resourcesURL + "/" + getReleasePathName(release.name);
         const manifestUrl = manifestBaseUrl + "/manifest.json";
 
         return fetch(manifestUrl, {
@@ -166,7 +174,8 @@ export class GithubService {
         release: GithubRelease,
         images: FirmwareImage[]
     ): Promise<Uint8Array[]> {
-        const baseUrl = this.resourcesURL + "/" + release.name + "/";
+        const baseUrl =
+            this.resourcesURL + "/" + getReleasePathName(release.name) + "/";
 
         return Promise.all(
             images.map((image) => {
@@ -193,7 +202,8 @@ export class GithubService {
         release: GithubRelease,
         file: FirmwareFile
     ): Promise<Uint8Array> {
-        const baseUrl = this.resourcesURL + "/" + release.name + "/";
+        const baseUrl =
+            this.resourcesURL + "/" + getReleasePathName(release.name) + "/";
 
         return fetch(baseUrl + file.path, {
             headers: {
