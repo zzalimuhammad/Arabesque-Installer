@@ -1,12 +1,12 @@
 .footer {
-    background: linear-gradient(180deg, rgba(15, 24, 33, 0.94) 0%, rgba(11, 18, 26, 0.96) 100%);
-    border-top: 1px solid var(--app-border);
+    background: rgba(12, 20, 29, 0.94);
+    border-top: 1px solid rgba(47, 67, 86, 0.75);
     padding: 10px 0 16px 0;
     font-size: 15px;
     width: 100%;
     margin-top: auto;
-    box-shadow: 0 -10px 26px rgba(0, 0, 0, 0.26);
-    backdrop-filter: blur(8px);
+    box-shadow: none;
+    backdrop-filter: none;
 
     ul {
         list-style: none;

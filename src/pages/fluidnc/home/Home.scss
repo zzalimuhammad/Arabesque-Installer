@@ -14,13 +14,13 @@
 }
 
 .select-card {
-    min-height: 220px;
+    min-height: 0;
     height: 100%;
     width: 100%;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: left;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
@@ -39,6 +39,7 @@
         display: flex;
         flex-direction: column;
         gap: 6px;
+        flex: 0 0 auto;
         padding: 16px 18px;
 
         p {
@@ -50,6 +51,7 @@
 
     .card-footer {
         background: transparent;
+        margin-top: auto;
         padding: 10px 18px 14px;
     }
 
@@ -72,7 +74,7 @@
 
 @media (max-width: 992px) {
     .select-card {
-        min-height: 205px;
+        min-height: 0;
     }
 }
 
@@ -82,7 +84,7 @@
     }
 
     .select-card {
-        min-height: 190px;
+        min-height: 0;
 
         .card-body {
             padding: 14px 14px;
